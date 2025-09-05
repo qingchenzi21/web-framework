@@ -1,2 +1,17 @@
 server:
   port: 8081
+spring:
+  application:
+    name: week1
+
+#自定义配置
+my:
+  mood:
+    today: 周五
+    content: 期待周末
+    author: "小程序员"
+
+#功能开关
+  feature:
+    helloSwitch: true #true=开放接口，false=关闭接口
+    closeMsg: "该接口正在维护，十分钟后再来吧"
