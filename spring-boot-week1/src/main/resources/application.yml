@@ -15,3 +15,13 @@ my:
   feature:
     helloSwitch: true #true=开放接口，false=关闭接口
     closeMsg: "该接口正在维护，十分钟后再来吧"
+
+tbz:
+  sms:
+    ccp:
+      serverIp: app.cloopen.com
+      port: 8883
+      accountSId: 2c94811c9860a9c4019917b8da661dbd
+      accountToken: 2d6805262ad2420ab7b49e0ee9d9c633
+      appId: 2c94811c9860a9c4019917b8dbc81dc4
+      templateId: 1

@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+Team:
+  name: "web2班"
+  leader: "tbz"
+  phone: "18011141512"
+  age: ${random.int(1,4)}
+
+
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB     # 单个上传文件大小限定为10M，默认值为1M
+      max-request-size: 100MB # 单次上传文件大小限定为100M，默认值为10M
+
+
