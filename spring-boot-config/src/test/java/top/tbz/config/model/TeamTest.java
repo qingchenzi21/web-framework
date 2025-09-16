@@ -1,4 +1,4 @@
-package top.config.model;
+package top.tbz.config.model;
 
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;

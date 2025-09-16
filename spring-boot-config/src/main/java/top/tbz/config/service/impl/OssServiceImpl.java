@@ -1,4 +1,4 @@
-package top.config.service.impl;
+package top.tbz.config.service.impl;
 
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
@@ -7,8 +7,8 @@ import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-import top.config.config.OssConfig;
-import top.config.service.OssService;
+import top.tbz.config.config.OssConfig;
+import top.tbz.config.service.OssService;
 
 import java.io.IOException;
 import java.io.InputStream;

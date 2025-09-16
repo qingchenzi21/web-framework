@@ -1,11 +1,11 @@
-package top.config.controller;
+package top.tbz.config.controller;
 
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
-import top.config.service.OssService;
+import top.tbz.config.service.OssService;
 
 @RestController
 @RequestMapping("/oss")

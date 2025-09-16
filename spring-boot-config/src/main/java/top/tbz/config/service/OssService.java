@@ -1,4 +1,4 @@
-package top.config.service;
+package top.tbz.config.service;
 
 import org.springframework.web.multipart.MultipartFile;
 
