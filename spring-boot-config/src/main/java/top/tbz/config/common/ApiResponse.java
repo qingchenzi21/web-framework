@@ -7,21 +7,22 @@ import lombok.Getter;
  */
 @Getter
 public class ApiResponse<T> {
-    private final String status;
-    private final String message;
+    private final  int code;
+    private final String msg;
     private final T data;
-    public ApiResponse(String status, String message, T data) {
-        this.status = status;
-        this.message = message;
-        this.data = data;
+
+    public ApiResponse(int code,String msg,T data){
+        this.code=code;
+        this.msg=msg;
+        this.data=data;
     }
 
-    public static <ResultStatus> ApiResponse<ResultStatus> success(String msg, ResultStatus rs) {
-        return new ApiResponse<>("success", "发送成功" , rs);
+    public static <T> ApiResponse<T> success(String msg,T data) {
+        return new ApiResponse<>(200, msg, data);
     }
 
-    public static <T> ApiResponse<T> fail(String msg) {
-        return new ApiResponse<>("fail", "发送失败", null);
+    public static <T> ApiResponse<T> error(String msg){
+        return new ApiResponse<>(400,msg,null);
     }
 
 }

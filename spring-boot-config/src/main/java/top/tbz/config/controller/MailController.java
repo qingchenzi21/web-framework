@@ -24,7 +24,7 @@ public class MailController {
             return ResponseEntity.ok(ApiResponse.success("发送成功",rs));
         }
         //业务失败返回400
-        return ResponseEntity.ok(ApiResponse.fail("发送失败"));
+        return ResponseEntity.ok(ApiResponse.error("发送失败"));
     }
 
     @PostMapping("/html")
@@ -32,7 +32,7 @@ public class MailController {
         ResultStatus rs = mailService.sendHtmlMail(mail);
         return rs == ResultStatus.SUCCESS ?
                 ResponseEntity.ok(ApiResponse.success("发送成功",rs)) :
-                ResponseEntity.badRequest().body(ApiResponse.fail("发送失败"));
+                ResponseEntity.badRequest().body(ApiResponse.error("发送失败"));
     }
 
     @PostMapping(value = "/attachments", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
@@ -47,6 +47,6 @@ public class MailController {
         ResultStatus rs = mailService.sendAttachmentsMail(mail,files);
         return rs == ResultStatus.SUCCESS ?
                 ResponseEntity.ok(ApiResponse.success("发送成功",rs)) :
-                ResponseEntity.badRequest().body(ApiResponse.fail("发送失败"));
+                ResponseEntity.badRequest().body(ApiResponse.error("发送失败"));
     }
 }

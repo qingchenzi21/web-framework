@@ -13,11 +13,13 @@ public enum DrinkType {
         this.price = price;
     }
 
-    public String getType() {
+    public String getLabel() {
+
         return type;
     }
 
     public double getPrice() {
+
         return price;
     }
 }
