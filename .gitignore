@@ -34,3 +34,14 @@ build/
 
 
 spring-boot-config/src/main/resources/aliyun-oss.properties
+
+
+#Node.js dependencies
+node_modules/
+npm_debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#Frontend build artifacts
+dist/
+build/
