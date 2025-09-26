@@ -14,6 +14,8 @@
     <packaging>pom</packaging>
     <name>spring-boot-test</name>
 	<description>spring-boot-test</description>
+
+
 	<url/>
 	<licenses>
 		<license/>
@@ -21,11 +23,18 @@
 	<developers>
 		<developer/>
 	</developers>
+
+
+
     <modules>
         <module>spring-boot-week1</module>
 		<module>spring-boot-config</module>
         <module>spring-boot-mp</module>
-    </modules>
+        <module>spring-boot-exception</module>
+        <module>spring-boot-redis</module>
+		<module>spring-boot-redis</module>
+		<module>spring-boot-filter-interceptor</module>
+	</modules>
     <scm>
 		<connection/>
 		<developerConnection/>
@@ -38,7 +47,11 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<mybatis-plus.version>3.5.7</mybatis-plus.version>
 		<mysql.version>8.3.0</mysql.version>
+		<datafaker.version>2.2.2</datafaker.version>
+		<fastjson2.version>2.0.47</fastjson2.version>
 	</properties>
+
+
 
 
 
@@ -81,7 +94,38 @@
 				<artifactId>mysql-connector-j</artifactId>
 				<version>${mysql.version}</version>
 			</dependency>
+
+			<!-- MyBatis-Plus -->
+			<dependency>
+				<groupId>com.baomidou</groupId>
+				<artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+				<version>${mybatis-plus.version}</version>
+			</dependency>
+			<!-- MySQL 驱动 -->
+			<dependency>
+				<groupId>com.mysql</groupId>
+				<artifactId>mysql-connector-j</artifactId>
+				<version>${mysql.version}</version>
+			</dependency>
+			<!-- DataFaker 数据生成 -->
+			<dependency>
+				<groupId>net.datafaker</groupId>
+				<artifactId>datafaker</artifactId>
+				<version>${datafaker.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.alibaba.fastjson2</groupId>
+				<artifactId>fastjson2</artifactId>
+				<version>${fastjson2.version}</version>
+			</dependency>
+
+
+
 		</dependencies>
+
+
+
 	</dependencyManagement>
 
 
