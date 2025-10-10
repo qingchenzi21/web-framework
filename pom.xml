@@ -34,7 +34,8 @@
         <module>spring-boot-redis</module>
 		<module>spring-boot-redis</module>
 		<module>spring-boot-filter-interceptor</module>
-	</modules>
+        <module>spring-boot-Filter-and-Interceptor</module>
+    </modules>
     <scm>
 		<connection/>
 		<developerConnection/>
