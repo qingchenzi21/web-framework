@@ -1,13 +1,13 @@
-package top.tbz.springboottest;
+package top.tbz.test;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBootTestApplicationTests {
+class SpringBootRepositoryTestApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }

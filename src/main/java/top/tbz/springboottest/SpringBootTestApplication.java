@@ -1,4 +1,4 @@
-package top.tbz.springboottest;
+package src.main.java.top.tbz.springboottest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

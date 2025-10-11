@@ -77,9 +77,13 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+        </dependency>
 
 
-	</dependencies>
+    </dependencies>
 
 
 	<!--统一管理版本-->
